@@ -7,7 +7,7 @@ require('./models/User');
 require('./services/passport.js');
 
 mongoose.connect(
-	'mongodb://ikehawk10:jesus100@ds141534.mlab.com:41534/emaildb'
+	keys.mongoURI
 );
 
 const app = express();
